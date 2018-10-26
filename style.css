@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*fonts*/
+
+@font-face {
+    font-family: "proximanova-bold";
+    src: url("Fonts/ProximaNova/ProximaNova-Bold.ttf");
+}
+
+.proximanova-bold {
+    font-family: proximanova-bold, sans-serif;
+}
+
+/*font-faces*/
+
+/*tags*/
+
+ul {
+    list-style: none;
+}
+
+/*tags*/
+
+/*font-sizes*/
+
+.push-pxNormal {
+    font-size: 12px;
+}
+
+.push-pxSmall {
+    font-size: 10px;
+}
+
+.logo-normal {
+    font-size: 20px;
+}
+
+.logo-big {
+    font-size: 40px;
+}
+
+.num-big {
+    font-size: 30px;
+}
+
+.num-normal {
+    font-size: 20px;
+}
+
+/*font-sizes*/
+
+/*header*/
+
+.page-head {
+    position: relative;
+}
+
+.page-head-bar {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 8px 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.page-head-leftMenu-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.page-head-leftMenu-wrap-text {
+}
+
+.page-head-leftMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.page-head-leftMenu-text {
+    width: 50%;
+    height: 0;
+    border: 1px solid rgba(154, 129, 1, 0.51);
+    overflow: hidden;
+    margin: 3px 0;
+    color: black;
+    transition: height 0s linear, width 0s linear;
+}
+
+.page-head-leftMenu-wrap:hover .page-head-leftMenu {
+    position: absolute;
+    top: 100%;
+}
+
+.page-head-leftMenu-wrap:hover .page-head-leftMenu-text {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border: none;
+    transition: height 1s linear, width 1s linear;
+}
+
+.page-head-bar-center-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.page-logo {
+    color: #FFFFFF;
+    margin: 0 20px;
+    letter-spacing: 10px;
+}
+
+.page-logo-letters-container {
+    letter-spacing: 0;
+    margin-right: 10px;
+    display: inline-block;
+    position: relative;
+}
+
+.page-logo-letters-container::first-letter {
+    letter-spacing: 10px;
+}
+
+.page-logo-letters-container::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: rgba(154, 129, 1, 0.9);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+
+.page-logo-lastLetter {
+    letter-spacing: 0;
+}
+
+.page-head-centerMenu {
+}
+
+.page-head-centerMenu-wrap {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.page-head-centerMenu-text {
+    margin: 0 10px;
+}
+
+.info-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.info-svg-container {
+}
+
+.language-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.language {
+    margin: 0 10px;
+}
+
+.language-svg-container {
+}
+
+.info-svg-container svg {
+    width: 12px;
+    height: 12px;
+}
+
+.language-svg-container svg {
+    width: 12px;
+    height: 8px;
+}
+
+/*header*/
